@@ -20,17 +20,22 @@ type NewObject struct {
 }
 ```
 
+## Installation
+
+Haven't done a release yet, so for now just run `go install -v github.com/seanph/gostruct@latest`.
+
+
 ## Usage
 
 `gostruct` can be used via either piped input or direct input.
 
 **Pipe**
-```
+```bash
 echo '{"id": 5, "name": "test"}' | gostruct
 ```
 
 **Direct**
-```
+```bash
 gostruct --dump
 ```
 Then paste in the JSON data and hit `Ctrl+D` to signal EOF.
